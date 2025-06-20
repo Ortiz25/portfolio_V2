@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { animated, useSpring } from "@react-spring/web";
+import portfolio from "../src/assets/images/portfolio1.jpg"
 
 function About() {
   const [animationProps, set] = useSpring(() => ({
@@ -50,7 +51,7 @@ function About() {
           <div className="">
             <img
               className="ring-8 ring-white-800"
-              src="../src/assets/images/portfolio1.jpg"
+              src= {portfolio}
             />
           </div>
           <div className="flex justify-between p-2">
