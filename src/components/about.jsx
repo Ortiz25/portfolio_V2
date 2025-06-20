@@ -2,6 +2,11 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { animated, useSpring } from "@react-spring/web";
 import portfolio from "../assets/images/portfolio1.jpg"
+import html5 from "../assets/svg/html5.svg"
+import css3 from "../assets/svg/css3.svg"
+import js from "../assets/svg/js.svg"
+import node from "../assets/svg/node.svg"
+import react1 from "../assets/svg/react.svg"
 
 function About() {
   const [animationProps, set] = useSpring(() => ({
@@ -44,9 +49,9 @@ function About() {
       <div className="container mx-auto  max-w-7xl grid md:grid-cols-2 ">
         <div className="p-4 transition ease-in-outdelay-100 duration-700 hover:-translate-x-1 hover:scale-110 ">
           <div className="flex justify-between p-4">
-            <img src="../src/assets/svg/html5.svg" className="size-10 inline" />
-            <img src="../src/assets/svg/css3.svg" className="size-10 inline" />
-            <img src="../src/assets/svg/js.svg" className="size-10 inline" />
+            <img src={html5} className="size-10 inline" />
+            <img src={css3} className="size-10 inline" />
+            <img src={js} className="size-10 inline" />
           </div>
           <div className="">
             <img
@@ -55,8 +60,8 @@ function About() {
             />
           </div>
           <div className="flex justify-between p-2">
-            <img src="../src/assets/svg/node.svg" className="size-14 inline" />
-            <img src="../src/assets/svg/react.svg" className="size-10 inline" />
+            <img src={node} className="size-14 inline" />
+            <img src={react1} className="size-10 inline" />
           </div>
         </div>
         <animated.div id="animate" className="p-4" style={animationProps}>
