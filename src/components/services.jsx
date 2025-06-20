@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { animated, useSpring } from "@react-spring/web";
+import code  from "../assets/images/code.png"
+import servers  from "../assets/images/servers.png"
+import engineering  from "../assets/images/engineering.png"
 
 function Services() {
   return (
@@ -47,7 +50,7 @@ function Services() {
           <div className="p-6 md:p-8">
             <div className="transition ease-in-outdelay-100 duration-700 hover:-translate-x-1 hover:scale-110  bg-white p-2 md:p-4 flex space-x-2  mb-4 rounded">
               <div className="rounded-full bg-gray-200 p-4  md:p-6">
-                <img className="size-10" src="../src/assets/images/code.png" />
+                <img className="size-10" src={code} />
               </div>
               <div className="inline-block max-w-sm ">
                 <span className="font-bold text-xl">Website Development</span>
@@ -61,7 +64,7 @@ function Services() {
               <div className="rounded-full bg-gray-200 p-4 md:p-6">
                 <img
                   className="size-10"
-                  src="../src/assets/images/servers.png"
+                  src={servers}
                 />
               </div>
               <div className="inline-block max-w-sm ">
@@ -79,7 +82,7 @@ function Services() {
               <div className="rounded-full bg-gray-200  p-4 md:p-6 inline">
                 <img
                   className="size-10"
-                  src="../src/assets/images/engineering.png"
+                  src={engineering }
                 />
               </div>
               <div className="inline-block max-w-sm ">
