@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { animated, useSpring } from "@react-spring/web";
-import portfolio from "../src/assets/images/portfolio1.jpg"
+import portfolio from "../assets/images/portfolio1.jpg"
 
 function About() {
   const [animationProps, set] = useSpring(() => ({
